@@ -20,7 +20,7 @@ namespace CredeitCardWebAPI.Controllers
         public UserInfoController(ApplicationDBContext context)
         {
             _context = context;
-        }
+        } 
 
         // Get: api/Users
 

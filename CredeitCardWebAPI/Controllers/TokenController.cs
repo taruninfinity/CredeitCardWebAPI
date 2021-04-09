@@ -55,7 +55,7 @@ namespace CredeitCardWebAPI.Controllers
                         expires: DateTime.Now.AddMinutes(20),
                         signingCredentials: signIn);
 
-                    return Ok(new JwtSecurityTokenHandler().WriteToken(token));
+                    return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
                 }
                 else
                 {
